@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CollectableBreads : MonoBehaviour
 {
-    private void OnCollision(Collision c)
+    private void OnTriggerEnter(Collider c)
     {
         // inventory breads ++
-        
-        Destroy(c.gameObject);
+
+
+        Destroy(gameObject);
     }
 }

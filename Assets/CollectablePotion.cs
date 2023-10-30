@@ -6,6 +6,8 @@ public class CollectablePotion : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        // inventory++
+
+        Destroy(this.gameObject);
     }
 }
