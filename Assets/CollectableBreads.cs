@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class CollectableBreads : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
+        Destroy(this.gameObject);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
