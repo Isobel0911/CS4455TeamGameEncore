@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class CollectableBreads : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollision(Collision c)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // inventory count ++
-
-            // disappear
-            Destroy(this.gameObject);
-        }
+        // inventory breads ++
+        
+        Destroy(c.gameObject);
     }
 }
