@@ -3206,9 +3206,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionSmoothTime: 1
-  rotationSmoothTime: 1
+  rotationSmoothTime: 50
   positionMaxSpeed: 250
-  rotationMaxSpeed: 50
+  rotationMaxSpeed: 300
   desiredPose: {fileID: 491966549}
   target: {fileID: 1712882679}
 --- !u!1 &969352560
@@ -3675,11 +3675,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3796546329329765241, guid: 29142c9c45a572147a2e534933889bbf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 552.1
+      value: 562.269
       objectReference: {fileID: 0}
     - target: {fileID: 3796546329329765241, guid: 29142c9c45a572147a2e534933889bbf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34.01
+      value: 35.93
       objectReference: {fileID: 0}
     - target: {fileID: 3796546329329765241, guid: 29142c9c45a572147a2e534933889bbf, type: 3}
       propertyPath: m_LocalPosition.z
