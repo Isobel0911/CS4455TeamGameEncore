@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Water
+  - Fire
+  - Tree
   layers:
   - Default
   - TransparentFX
