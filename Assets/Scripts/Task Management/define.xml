@@ -1,0 +1,8 @@
+<Task>
+    <ID>1</ID>
+    <Name>task1</Name>
+    <Description>complete task 1</Description>
+    <Type>1</Type>
+    <Goal>100</Goal>
+    <Reward>1000</Reward>
+</Task>
