@@ -542,33 +542,33 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Protagn(Clone)
+    - name: Protagnist(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Paladin_J_Nordstrom_Shield
-      parentName: Protagn(Clone)
+      parentName: Protagnist(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Paladin_J_Nordstrom_Sword
-      parentName: Protagn(Clone)
+      parentName: Protagnist(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Paladin_J_Nordstrom_Helmet
-      parentName: Protagn(Clone)
+      parentName: Protagnist(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Paladin_J_Nordstrom
-      parentName: Protagn(Clone)
+      parentName: Protagnist(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: Protagn(Clone)
+      parentName: Protagnist(Clone)
       position: {x: -0.0003427926, y: 0.95579463, z: 0.0046594837}
       rotation: {x: 5.070907e-14, y: 0.00000006180133, z: -0.0000008205174, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -924,7 +924,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 50289c1494de11d4f99200870ec022fc, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 1a117336cbcefd541a25a1e3ebb74dec, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
