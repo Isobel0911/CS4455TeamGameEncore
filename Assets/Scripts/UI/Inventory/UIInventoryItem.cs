@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using TMPro;
+// using TMPro;
 using UnityEngine.Events;
 
 public class UIInventoryItem : MonoBehaviour//, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
@@ -14,7 +14,7 @@ public class UIInventoryItem : MonoBehaviour//, IPointerEnterHandler, IPointerEx
     [SerializeField] private Image itemImage;
     [SerializeField] private Image bgEmptyImage;
     [SerializeField] private Button itemButton;
-    [SerializeField] private TextMeshProUGUI itemCount;
+    // [SerializeField] private TextMeshProUGUI itemCount;
 
     // public UnityAction<ItemSO>
 
