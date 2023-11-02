@@ -8,6 +8,13 @@ TagManager:
   - Water
   - Fire
   - Tree
+  - PlayerFeet
+  - PlayerHead
+  - PlayerWeapon
+  - PlayerShield
+  - PlayerFront
+  - PlayerBack
+  - Bridges
   layers:
   - Default
   - TransparentFX

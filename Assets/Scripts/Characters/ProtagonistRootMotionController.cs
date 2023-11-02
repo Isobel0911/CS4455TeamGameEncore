@@ -69,7 +69,6 @@ public class ProtagonistRootMotionController : MonoBehaviour {
         else animator.SetFloat("DirectionX", 0);
 
         animator.SetBool("isRun", Input.GetKey(KeyCode.LeftShift));
-        animator.SetBool("isRun", Input.GetKey(KeyCode.LeftShift));
 
         // Check status of special-motion locker
         if (!animator.GetBool("LockMotion")) {
@@ -81,7 +80,7 @@ public class ProtagonistRootMotionController : MonoBehaviour {
                 !animator.GetBool("isForward")  && !animator.GetBool("isBackward") &&
                  animator.GetFloat("DirectionX") == 0)
                 if (timeNextIdleMotion < Time.time)
-                    timeNextIdleMotion = Time.time + 1000 * ((float) (4 + random.NextDouble() * (7 - 4))); // after 4-7 sec
+                    timeNextIdleMotion = Time.time + ((float) (4 + random.NextDouble() * (7 - 4))); // after 4-7 sec
                 else if (timeNextIdleMotion == Time.time) {
                     animator.SetBool("LockMotion", true);
                     animator.SetTrigger("IdleSwitch0"+random.Next(1, 4).ToString());
@@ -108,6 +107,7 @@ public class ProtagonistRootMotionController : MonoBehaviour {
     }
 
     void pressWS(bool pressed) {
+        animator.SetBool("LockMotion", false);
         animator.SetBool("isForward", pressed);
         animator.SetBool("isBackward", !pressed);
         animator.SetBool("isIdle", false);
@@ -115,6 +115,7 @@ public class ProtagonistRootMotionController : MonoBehaviour {
 
     void pressAD(bool pressed) {
         updateDirectionX(pressed);
+        animator.SetBool("LockMotion", false);
         animator.SetBool("isIdle", false);
     }
 
@@ -123,7 +124,10 @@ public class ProtagonistRootMotionController : MonoBehaviour {
         if (!left && animator.GetFloat("DirectionX") < 1) animator.SetFloat("DirectionX", animator.GetFloat("DirectionX") + DeltaDirectionX);
     }
 
-    void OnCollisionEnter(Collision collision) {
+    void OnCollisionStay(Collision collision) {
         animator.SetBool("isGrounded", collision.gameObject.layer == LayerMask.NameToLayer("Terrain"));
+    }
+    void OnCollisionExit(Collision collision) {
+        animator.SetBool("isGrounded", false);
     }
 }
