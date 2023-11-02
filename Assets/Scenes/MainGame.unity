@@ -591,7 +591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158622979}
   m_LocalRotation: {x: 0, y: 0.10626403, z: 0, w: 0.994338}
-  m_LocalPosition: {x: 0, y: 2.56, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1.49, y: 7, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1277,8 +1277,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409972614}
   m_LocalRotation: {x: -0, y: 0.10556986, z: -0, w: 0.9944119}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15, y: 5, z: 90}
+  m_LocalPosition: {x: 0, y: -1.8, z: 0}
+  m_LocalScale: {x: 15, y: 5, z: 103}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 921529588}
@@ -5169,6 +5169,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1187582930}
     m_Modifications:
+    - target: {fileID: 6354084105408372444, guid: d1b2880d69892194c9ea4153cfd0ae20, type: 3}
+      propertyPath: m_Name
+      value: Terrain_(0.00, 0.00, 0.00)
+      objectReference: {fileID: 0}
     - target: {fileID: 6354084106376059348, guid: d1b2880d69892194c9ea4153cfd0ae20, type: 3}
       propertyPath: m_Name
       value: Terrains
@@ -5748,7 +5752,7 @@ MeshCollider:
   m_GameObject: {fileID: 1504806699}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -6738,7 +6742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861109408}
   m_LocalRotation: {x: -0, y: 0.649448, z: -0, w: 0.760406}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
