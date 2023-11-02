@@ -9,7 +9,7 @@ public class ProtagonistRootMotionController : MonoBehaviour {
 
     private Dictionary<KeyCode, float> keyDownTime = new Dictionary<KeyCode, float>();
     private float timeNextIdleMotion = -0.1f;
-    public float DeltaDirectionX = 0.01f;
+    public float DeltaDirectionX = 0.05f;
 
 
     // Start is called before the first frame update
@@ -46,6 +46,7 @@ public class ProtagonistRootMotionController : MonoBehaviour {
     void Update() {
         RecordKeyPressedTime();
         animator.SetBool("isIdle", true);
+        animator.ResetTrigger("Turn");
 
         // Key: Forward/Backward
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S)) {
@@ -69,6 +70,7 @@ public class ProtagonistRootMotionController : MonoBehaviour {
         else animator.SetFloat("DirectionX", 0);
 
         animator.SetBool("isRun", Input.GetKey(KeyCode.LeftShift));
+        if (Input.GetKey(KeyCode.T)) animator.SetTrigger("Turn");
 
         // Check status of special-motion locker
         if (!animator.GetBool("LockMotion")) {
