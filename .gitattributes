@@ -2,3 +2,4 @@ Cliff_Mossy_E_BaseColor.tif filter=lfs diff=lfs merge=lfs -text
 Cliff_Mossy_E_MaskMap.tif filter=lfs diff=lfs merge=lfs -text
 Cliff_Mossy_E_Normal.tif filter=lfs diff=lfs merge=lfs -text
 libburst-llvm-14.dylib filter=lfs diff=lfs merge=lfs -text
+Assets/Audio/Background/*.wav filter=lfs diff=lfs merge=lfs -text
