@@ -69,10 +69,11 @@ public class PlaySounds : MonoBehaviour
             case 4: // stone road
                 audioSource.PlayOneShot(jumpSound[(soundIdx[8]++)%jumpSound.Length]);
                 break;
-            case 3: // underwater
-                audioSource.PlayOneShot(jumpWaterSound[(soundIdx[9]++)%jumpWaterSound.Length]);
-                break;
         }
+    }
+
+    public void jumpIntoWater() {
+        audioSource.PlayOneShot(jumpWaterSound[(soundIdx[9]++)%jumpWaterSound.Length]);
     }
 
     public void powerUp() {audioSource.PlayOneShot(powerUpSound[rand.Next(0, powerUpSound.Length)]);}

@@ -25,6 +25,7 @@ public class GroundDetector : MonoBehaviour {
     public TerrainLayerData[] terrainLayerDataArray;
     private Animator animator;
     public Transform waterPlane;
+    public Transform FeetRayCast;
     private bool outWater = true;
 
     void Start() {
@@ -66,14 +67,14 @@ public class GroundDetector : MonoBehaviour {
             }
         }
 
-        bool check = true;
-        foreach(GameObject foot in feet) {
-            if (!outWater && foot.transform.position.y > waterPlane.position.y || 
-                 outWater && foot.transform.position.y < waterPlane.position.y) {
-                animator.SetInteger("groundType", 3);
-            }
-            check = check && (foot.transform.position.y > waterPlane.position.y);
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if (!outWater && FeetRayCast.transform.position.y > waterPlane.position.y ||
+             outWater && FeetRayCast.transform.position.y < waterPlane.position.y && 
+            (stateInfo.IsName("Jump Up (Walk)") ||
+             stateInfo.IsName("Jump Up (Run)") ||
+             stateInfo.IsName("Jump Up (Idle)"))) {
+            GetComponent<PlaySounds>().jumpIntoWater();
         }
-        outWater = check;
+        outWater = (FeetRayCast.transform.position.y > waterPlane.position.y);
     }
 }

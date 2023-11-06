@@ -21,12 +21,18 @@ public class ProtagonistRootMotionController : MonoBehaviour {
     public float maxDistance;
     public Transform footTransform; 
 
-    public int heath;
-    public int defence;
-    public int attack;
+    // attacking
+    public GameObject sword;
+    public GameObject shield;
+    private AttackController swordController;
+    public int attackIdx = 0;
 
+    public float health = 100f;
+    public float defense = 10f;
+    public float attack = 5f;
 
-    // Start is called before the first frame update
+    /// --- Start/Update/FixedUpdate --- ///
+
     void Start() {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
@@ -51,21 +57,10 @@ public class ProtagonistRootMotionController : MonoBehaviour {
 
         Vector3 gravity = gravityScale * Physics.gravity;
         rb.AddForce(gravity, ForceMode.Acceleration);
+
+        swordController = sword.GetComponent<AttackController>();
     }
 
-    void resetAllTriggers() {
-        animator.ResetTrigger("IdleSwitch01");
-        animator.ResetTrigger("IdleSwitch02");
-        animator.ResetTrigger("IdleSwitch03");
-        animator.ResetTrigger("Turn");
-        animator.ResetTrigger("Jump");
-        animator.ResetTrigger("Casting");
-        animator.ResetTrigger("Damaged");
-        animator.ResetTrigger("Death");
-        animator.ResetTrigger("PowerUp");
-    }
-
-    // Update is called once per frame
     void Update() {
 
         RecordKeyPressedTime();
@@ -107,7 +102,7 @@ public class ProtagonistRootMotionController : MonoBehaviour {
                  animator.GetFloat("DirectionX") == 0) {
                 if (timeNextIdleMotion < Time.time) {
                     animator.SetBool("LockMotion", true);
-                    timeNextIdleMotion = Time.time + ((float) (10 + random.NextDouble() * (15 - 10))); // after 10-15 sec
+                    timeNextIdleMotion = Time.time + ((float) (30 + random.NextDouble() * (60 - 30))); // after 30-60 sec
                 }
             } else {
                 timeNextIdleMotion = Time.time - 0.1f;
@@ -131,19 +126,44 @@ public class ProtagonistRootMotionController : MonoBehaviour {
         }
 
         // Jump
-        if (animator.GetBool("isGrounded") && !isJumping && Input.GetKeyDown(KeyCode.K)) {
+        if (animator.GetBool("isGrounded") && !isJumping && Input.GetKeyDown(KeyCode.Space)) {
             animator.SetTrigger("Jump");
             animator.SetBool("LockMotion", false);
         }
-
         if (isJumping) {
              rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
              isJumping = false;
         }
+
+        // Attack
+        if (Input.GetMouseButton(0)) {
+            attackIdx++;
+            if (attackIdx > 3) {
+                attackIdx = 0;
+                return;
+            }
+            
+        }
+        
+        heightRayCasting();
     }
 
     void FixedUpdate() {
         heightRayCasting();
+    }
+
+    /// --- local functions --- ///
+
+    void resetAllTriggers() {
+        animator.ResetTrigger("IdleSwitch01");
+        animator.ResetTrigger("IdleSwitch02");
+        animator.ResetTrigger("IdleSwitch03");
+        animator.ResetTrigger("Turn");
+        animator.ResetTrigger("Jump");
+        animator.ResetTrigger("Casting");
+        animator.ResetTrigger("Damaged");
+        animator.ResetTrigger("Death");
+        animator.ResetTrigger("PowerUp");
     }
 
     void RecordKeyPressedTime() {
@@ -211,7 +231,8 @@ public class ProtagonistRootMotionController : MonoBehaviour {
 
     void heightRayCasting() {
         RaycastHit hit;
-        if (Physics.Raycast(footTransform.position, Vector3.down, out hit)) {
+        // Emit a ray downward from the footTransform's position and only detect a specific LayerMask
+        if (Physics.Raycast(footTransform.position, Vector3.down, out hit, Mathf.Infinity,  1 << 3)) {
             float distanceToGround = hit.distance;
             animator.SetFloat("Test", distanceToGround);
             if (distanceToGround <= maxDistance) {
@@ -221,7 +242,40 @@ public class ProtagonistRootMotionController : MonoBehaviour {
             }
         } else {
             animator.SetFloat("Test", 999);
+            // If it does not collide with the Terrain, it is considered not to have touched the ground.
             animator.SetBool("isGrounded", true);
         }
     }
+
+    /// --- global functions --- ///
+
+    public void Attack(int mode) {
+        switch (mode) {
+            case 1:  // attack 01
+            case 2:  // attack 02
+                swordController.enableAttack(attack);
+                break;
+            case 3:  // attack 03
+                swordController.enableAttack(attack * 2f);
+                break;
+            case 4:  // big attack 01
+            case 5:  // big attack 02
+                swordController.enableAttack(attack * 1.5f);
+                break;
+            case 6:  // big attack 03
+                swordController.enableAttack(attack * 2.5f);
+                break;
+            case 7:  // crouch attack
+                swordController.enableAttack(attack * 0.8f);
+                break;
+        }
+    }
+
+    public void increaseHealth(float amount)  { health += amount; }
+    public void increaseDefense(float amount) { defense += amount; }
+    public void increaseAttack(float amount)  { attack += amount; }
+
+    public void decreaseHealth(float amount)  { health = Math.Max(0, health - amount); }
+    public void decreaseDefense(float amount) { defense = Math.Max(0, defense - amount); }
+    public void decreaseAttack(float amount)  { attack = Math.Max(0, attack - amount); }
 }

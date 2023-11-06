@@ -222,6 +222,29 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 42a5fc4117eb11e4db95a975d19a76ca, type: 3}
 --- !u!4 &7601787364241537885 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 42a5fc4117eb11e4db95a975d19a76ca, type: 3}
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 42a5fc4117eb11e4db95a975d19a76ca,
+    type: 3}
   m_PrefabInstance: {fileID: 7601787364241662429}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7601787364241631101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 42a5fc4117eb11e4db95a975d19a76ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 7601787364241662429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1315759204431726066
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601787364241631101}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
