@@ -88,7 +88,7 @@ public class TerrainInstancesHandler : MonoBehaviour {
 
                     // Add mesh collider and set properties
                     MeshCollider treeTrunkMeshCollider = treeGameObject.AddComponent<MeshCollider>();
-                    treeTrunkMeshCollider.convex = false;
+                    treeTrunkMeshCollider.convex = true;
                     // isTrigger property is false by default, so the following line is optional
                     // treeTrunkMeshCollider.isTrigger = false;
                     treeTrunkMeshCollider.sharedMaterial = treeMaterial;
@@ -113,7 +113,7 @@ public class TerrainInstancesHandler : MonoBehaviour {
                     MeshCollider rockMeshCollider = rockGameObject.AddComponent<MeshCollider>();
                     rockMeshCollider.sharedMaterial = rockMaterial;
                     rockMeshCollider.sharedMesh = rockMeshes[i];
-                    rockMeshCollider.convex = false;
+                    rockMeshCollider.convex = true;
 
                     // Exit the loop since we found the matching rock
                     isChecked = true;

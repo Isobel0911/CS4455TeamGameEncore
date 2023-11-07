@@ -17,10 +17,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   skyIntensityMode:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   exposure:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   multiplier:
     m_OverrideState: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
     m_Value: 0
   type:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   sphericalMode:
     m_OverrideState: 1
     m_Value: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 55261.973
   aerosolDensity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.035
   aerosolTint:
     m_OverrideState: 0
@@ -86,10 +86,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.5
   numberOfBounces:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 4
   groundTint:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
   groundColorTexture:
     m_OverrideState: 0
@@ -113,16 +113,16 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
   colorSaturation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   alphaSaturation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   alphaMultiplier:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   horizonTint:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
   zenithTint:
     m_OverrideState: 0
@@ -158,7 +158,7 @@ MonoBehaviour:
     m_Value: 0
   resolution:
     m_OverrideState: 1
-    m_Value: 1024
+    m_Value: 256
   shadowMultiplier:
     m_OverrideState: 1
     m_Value: 0.2
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d7593b3a9277ac4696b20006c21dde2, type: 3}
   m_Name: VisualEnvironment
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   skyType:
     m_OverrideState: 1
     m_Value: 4

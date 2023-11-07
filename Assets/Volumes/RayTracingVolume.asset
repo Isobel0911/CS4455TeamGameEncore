@@ -16,6 +16,9 @@ MonoBehaviour:
   rayBias:
     m_OverrideState: 0
     m_Value: 0.001
+  distantRayBias:
+    m_OverrideState: 0
+    m_Value: 0.001
   extendShadowCulling:
     m_OverrideState: 0
     m_Value: 0
@@ -91,13 +94,16 @@ MonoBehaviour:
     m_Value: 0.75
   m_RayMaxIterations:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 32
   rayMiss:
     m_OverrideState: 0
     m_Value: 3
   lastBounceFallbackHierarchy:
     m_OverrideState: 0
     m_Value: 3
+  ambientProbeDimmer:
+    m_OverrideState: 0
+    m_Value: 1
   layerMask:
     m_OverrideState: 0
     m_Value:

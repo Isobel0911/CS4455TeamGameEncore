@@ -16,41 +16,41 @@ MonoBehaviour:
     supportShadowMask: 1
     supportSSR: 1
     supportSSRTransparent: 1
-    supportSSAO: 1
-    supportSSGI: 1
-    supportSubsurfaceScattering: 1
+    supportSSAO: 0
+    supportSSGI: 0
+    supportSubsurfaceScattering: 0
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
         m_Id: With3Levels
-    supportVolumetrics: 1
-    supportVolumetricClouds: 1
-    supportLightLayers: 1
-    supportDistortion: 1
-    supportTransparentBackface: 1
-    supportTransparentDepthPrepass: 1
-    supportTransparentDepthPostpass: 1
+    supportVolumetrics: 0
+    supportVolumetricClouds: 0
+    supportLightLayers: 0
+    supportDistortion: 0
+    supportTransparentBackface: 0
+    supportTransparentDepthPrepass: 0
+    supportTransparentDepthPostpass: 0
     colorBufferFormat: 74
-    supportCustomPass: 1
+    supportCustomPass: 0
     customBufferFormat: 12
     supportedLitShaderMode: 3
     planarReflectionResolution:
       m_Values: 000100000002000000020000
       m_SchemaId:
         m_Id: With3Levels
-    supportDecals: 1
+    supportDecals: 0
     supportDecalLayers: 1
     supportSurfaceGradient: 1
     decalNormalBufferHP: 1
     msaaSampleCount: 1
-    supportMotionVectors: 1
+    supportMotionVectors: 0
     supportRuntimeAOVAPI: 0
     supportDitheringCrossFade: 1
     supportTerrainHole: 1
-    supportProbeVolume: 1
+    supportProbeVolume: 0
     probeVolumeMemoryBudget: 1024
     probeVolumeSHBands: 1
-    supportRayTracing: 1
+    supportRayTracing: 0
     supportedRayTracingMode: 3
     lightLoopSettings:
       cookieAtlasSize: 512
@@ -62,7 +62,7 @@ MonoBehaviour:
       reflectionCubemapSize: 256
       reflectionCacheCompressed: 1
       reflectionProbeFormat: 74
-      skyReflectionSize: 256
+      skyReflectionSize: 128
       skyLightingOverrideLayerMask:
         serializedVersion: 2
         m_Bits: 0
@@ -79,17 +79,17 @@ MonoBehaviour:
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 16
-      shadowFilteringQuality: 1
+      shadowFilteringQuality: 0
       punctualLightShadowAtlas:
-        shadowAtlasResolution: 4096
-        shadowAtlasDepthBits: 16
-        useDynamicViewportRescale: 1
-      areaLightShadowAtlas:
-        shadowAtlasResolution: 2048
+        shadowAtlasResolution: 128
         shadowAtlasDepthBits: 16
         useDynamicViewportRescale: 0
-      cachedPunctualLightShadowAtlas: 2048
-      cachedAreaLightShadowAtlas: 2048
+      areaLightShadowAtlas:
+        shadowAtlasResolution: 128
+        shadowAtlasDepthBits: 16
+        useDynamicViewportRescale: 0
+      cachedPunctualLightShadowAtlas: 128
+      cachedAreaLightShadowAtlas: 128
       shadowResolutionDirectional:
         m_Values: 80000000000100000002000000040000
         m_SchemaId:
@@ -118,7 +118,7 @@ MonoBehaviour:
       lutFormat: 48
       bufferFormat: 74
     dynamicResolutionSettings:
-      enabled: 1
+      enabled: 0
       useMipBias: 0
       enableDLSS: 1
       DLSSPerfQualitySetting: 0
@@ -133,14 +133,14 @@ MonoBehaviour:
       lowResTransparencyMinimumThreshold: 0
       rayTracingHalfResThreshold: 50
     lowresTransparentSettings:
-      enabled: 1
+      enabled: 0
       checkerboardDepthBuffer: 1
       upsampleType: 1
     xrSettings:
-      singlePass: 1
-      occlusionMesh: 1
+      singlePass: 0
+      occlusionMesh: 0
       cameraJitter: 0
-      allowMotionBlur: 1
+      allowMotionBlur: 0
     postProcessQualitySettings:
       NearBlurSampleCount: 030000000400000004000000
       NearBlurMaxRadius:
@@ -162,7 +162,7 @@ MonoBehaviour:
       ChromaticAberrationMaxSamples: 03000000060000000c000000
     lightSettings:
       useContactShadow:
-        m_Values: 000101
+        m_Values: 010000
         m_SchemaId:
           m_Id: 
     maximumLODLevel:
@@ -269,7 +269,7 @@ MonoBehaviour:
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   availableMaterialQualityLevels: -1
-  m_DefaultMaterialQualityLevel: 4
+  m_DefaultMaterialQualityLevel: 1
   diffusionProfileSettings: {fileID: 0}
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256

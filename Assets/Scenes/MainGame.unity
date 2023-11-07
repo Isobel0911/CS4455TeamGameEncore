@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2685.1777, g: 2569.8262, b: 2776.2578, a: 1}
+  m_IndirectSpecularColor: {r: 3684.6016, g: 2693.8281, b: 2583.414, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3702,6 +3702,7 @@ MonoBehaviour:
   footTransform: {fileID: 10140575}
   sword: {fileID: 1834340417}
   shield: {fileID: 7755931}
+  attackIdx: 0
   health: 100
   defense: 10
   attack: 5
@@ -12697,6 +12698,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 179056183}
     m_Modifications:
+    - target: {fileID: 4547765267078306787, guid: 930ec9e5bd4e2794ebb443cff6b18f5d,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 2cd63f99abe9142fc817d72331e5f3d5,
+        type: 2}
     - target: {fileID: 4547765267078306788, guid: 930ec9e5bd4e2794ebb443cff6b18f5d,
         type: 3}
       propertyPath: m_RootOrder
@@ -12831,6 +12838,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3861995814432371676, guid: 9f6962fe5015c5d4183396bd9864cdec,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: f13c3ea32f3694eabb3136cc156cd8a7,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f6962fe5015c5d4183396bd9864cdec, type: 3}
 --- !u!1001 &5839219670521690302
