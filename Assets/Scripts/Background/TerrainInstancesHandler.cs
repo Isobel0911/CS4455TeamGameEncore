@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.AI;
 
 public class TerrainInstancesHandler : MonoBehaviour {
     // Player Transform
@@ -33,6 +34,7 @@ public class TerrainInstancesHandler : MonoBehaviour {
             // Update the terrain's tree instances
             treeInstanceUpdate(terrain);
         }
+        UnityEditor.AI.NavMeshBuilder.BuildNavMesh();
     }
 
     void treeInstanceUpdate(Terrain terrain) {

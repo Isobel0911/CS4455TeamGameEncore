@@ -247,13 +247,13 @@ MonoBehaviour:
     m_Value: 1
   m_StepCount:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 4
   m_FullResolution:
     m_OverrideState: 1
     m_Value: 0
   m_MaximumRadiusInPixels:
     m_OverrideState: 1
-    m_Value: 24
+    m_Value: 32
   m_BilateralUpsample:
     m_OverrideState: 1
     m_Value: 0

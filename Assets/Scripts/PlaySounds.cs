@@ -79,7 +79,7 @@ public class PlaySounds : MonoBehaviour
     public void powerUp() {audioSource.PlayOneShot(powerUpSound[rand.Next(0, powerUpSound.Length)]);}
     public void block() {audioSource.PlayOneShot(blockSound[rand.Next(0, blockSound.Length)]);}
     public void swordWielding() {audioSource.PlayOneShot(swordWieldingSound[rand.Next(0, swordWieldingSound.Length)]);}
-    public void bigSwordWielding() {audioSource.PlayOneShot(bigSwordWieldingSound[rand.Next(0, bigSwordWieldingSound.Length)]);}
+    public void bigSwordWielding() {audioSource.PlayOneShot(swordWieldingSound[rand.Next(0, swordWieldingSound.Length)]);}
     public void yawn() {audioSource.PlayOneShot(yawnSound[rand.Next(0, yawnSound.Length)]);}
     public void kick() {audioSource.PlayOneShot(kickSound[rand.Next(0, kickSound.Length)]);}
     public void damaged() {audioSource.PlayOneShot(damagedSound[rand.Next(0, damagedSound.Length)]);}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4898629832518800349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Conifer_Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8282257052073066869}
   - component: {fileID: 6841421587738305859}
   - component: {fileID: 8022771579586352426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Conifer_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 1706627489586142495}
   - component: {fileID: 687928956863574600}
   - component: {fileID: 2511832911224205673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Conifer_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 4388053584151060432}
   - component: {fileID: 8844894662087583905}
   - component: {fileID: 961236277656404447}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Conifer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 8047741024393290668}
   - component: {fileID: 4793922944099726314}
   - component: {fileID: 6527774816124042769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Conifer_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 2631920329066186502}
   - component: {fileID: 908614307137176814}
   - component: {fileID: 6204508305717342976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Conifer_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

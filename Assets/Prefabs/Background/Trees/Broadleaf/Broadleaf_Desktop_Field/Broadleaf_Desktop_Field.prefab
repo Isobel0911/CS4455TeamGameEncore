@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5777410843420381163}
   - component: {fileID: 6030608886729599419}
   - component: {fileID: 6856956161861885885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Desktop_Field_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7018701177473756143}
   - component: {fileID: 8112686440624278393}
   - component: {fileID: 2358431581832393558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Desktop_Field_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 8531791460766915826}
   - component: {fileID: 5974508644388172238}
   - component: {fileID: 986441215970436233}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Desktop_Field_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 3175373019690823764}
   - component: {fileID: 3641981842790402325}
   - component: {fileID: 4211285032196223855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Desktop_Field_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,8 @@ GameObject:
   - component: {fileID: 7900536721528902676}
   - component: {fileID: 3170050229313889125}
   - component: {fileID: 3634558976372599590}
-  m_Layer: 0
+  - component: {fileID: 2515210987323117089}
+  m_Layer: 6
   m_Name: Broadleaf_Desktop_Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,3 +464,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &2515210987323117089
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7417297635127103150}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 4.6, z: 0}
+  m_TimeToStationary: 0.5

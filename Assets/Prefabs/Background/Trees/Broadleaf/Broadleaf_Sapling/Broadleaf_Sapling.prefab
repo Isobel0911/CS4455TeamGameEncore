@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8482323262514463716}
   - component: {fileID: 442058500456283258}
   - component: {fileID: 6187968988181666290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Sapling_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 1404909297873877956}
   - component: {fileID: 7035719673734722256}
   - component: {fileID: 8869281092967984130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Sapling_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 6886846594749884622}
   - component: {fileID: 1857983147969503167}
   - component: {fileID: 19749525281396732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Sapling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 7560998515663320141}
   - component: {fileID: 3466977356883876363}
   - component: {fileID: 7018037202267963182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Sapling_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 9063459965161709909}
   - component: {fileID: 4021904952569229334}
   - component: {fileID: 7763562618962575502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Sapling_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

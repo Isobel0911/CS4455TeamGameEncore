@@ -57,10 +57,34 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.36789927
+      - time: 0.014705894
+        functionName: lockAttack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 57e0226bf15048a4382cfc50bd3db142,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.36953327
         functionName: swordWielding
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 1d4399d14c13e47489ebb9b760dab68c,
+        objectReferenceParameter: {fileID: 11500000, guid: 0f1ccc8180e7da3479f1909e5a80490f,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.37208626
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 57e0226bf15048a4382cfc50bd3db142,
+          type: 3}
+        floatParameter: 0
+        intParameter: 1
+        messageOptions: 0
+      - time: 0.78267974
+        functionName: unlockAttack
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 57e0226bf15048a4382cfc50bd3db142,
           type: 3}
         floatParameter: 0
         intParameter: 0

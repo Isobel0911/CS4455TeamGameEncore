@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3390971583058038934}
   - component: {fileID: 1255864441036112079}
   - component: {fileID: 2301179241015626067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Hero_Field_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 77102711149510076}
   - component: {fileID: 8125479247812536704}
   - component: {fileID: 7712907278202175768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Hero_Field_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 2182785175827266002}
   - component: {fileID: 6345800728705142435}
   - component: {fileID: 4728247336568981216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Hero_Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 4026801627831249372}
   - component: {fileID: 8866397061335219634}
   - component: {fileID: 3339388606160572431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Hero_Field_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 4262729587316351390}
   - component: {fileID: 2688064948855473349}
   - component: {fileID: 7057929683934864241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broadleaf_Hero_Field_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
